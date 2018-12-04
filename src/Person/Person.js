@@ -1,8 +1,12 @@
 import React from 'react';
 
-// don' plan to change
-const person = (props) => {
-    return <p>I am {props.name} and i am {props.age} years old!</p>
+const person = ( props ) => {
+    return (
+      <div>
+        <p onClick={props.click}>I am {props.name} and i am {props.age} years old!</p>
+        <p>{props.children}</p>
+      </div>  
+    )
 };
 
 export default person;
